@@ -127,6 +127,9 @@ void setup() {
     digitalWrite(fan4, HIGH);
     digitalWrite(fan5, HIGH);
     digitalWrite(fan6, HIGH);*/
+
+    // register the cloud function
+    Particle.function("reset", pReset);
     
     delay(1000);
 }
